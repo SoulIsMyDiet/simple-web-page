@@ -1,0 +1,9 @@
+version: '3'
+services:
+  react-app:
+    build:
+      context: .  # Katalog, w którym znajduje się Dockerfile (aktualny katalog)
+      dockerfile: Dockerfile  # Nazwa pliku Dockerfile
+    working_dir: /app
+    ports:
+      - "3000:3000"
